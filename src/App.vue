@@ -77,47 +77,47 @@ const missao = [
 const patrocinadores = [
   {
     id: 1,
-    logo: 'public/Patrocinadores/Clip_path_group.png',
+    logo: 'patrocinadores/Clip_path_group.png',
     link: '',
   },
   {
     id: 2,
-    logo: 'public/Patrocinadores/Clip_path_group-1.png',
+    logo: 'patrocinadores/Clip_path_group-1.png',
     link: '',
   },
   {
     id: 3,
-    logo: 'public/Patrocinadores/Clip_path_group-2.png',
+    logo: 'patrocinadores/Clip_path_group-2.png',
     link: '',
   },
   {
     id: 4,
-    logo: 'public/Patrocinadores/Clip_path_group-3.png',
+    logo: 'patrocinadores/Clip_path_group-3.png',
     link: '',
   },
   {
     id: 5,
-    logo: 'public/Patrocinadores/Clip_path_group-4.png',
+    logo: 'patrocinadores/Clip_path_group-4.png',
     link: '',
   },
   {
     id: 6,
-    logo: 'public/Patrocinadores/Clip_path_group-5.png',
+    logo: 'patrocinadores/Clip_path_group-5.png',
     link: '',
   },
   {
     id: 7,
-    logo: 'public/Patrocinadores/Clip_path_group-6.png',
+    logo: 'patrocinadores/Clip_path_group-6.png',
     link: '',
   },
   {
     id: 8,
-    logo: 'public/Patrocinadores/Clip_path_group-7.png',
+    logo: 'patrocinadores/Clip_path_group-7.png',
     link: '',
   },
   {
     id: 9,
-    logo: 'public/Patrocinadores/Clip_path_group-8.png',
+    logo: 'patrocinadores/Clip_path_group-8.png',
     link: '',
   },
 ];
