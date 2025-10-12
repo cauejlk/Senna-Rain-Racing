@@ -49,7 +49,7 @@ const integrantes = [
     id: 6,
     foto: '/integrantes/foto_tigas1.png',
     name: 'Tiago Felipe do Rosário',
-    funcao: '',
+    funcao: 'Engenheiro Aerodinâmico',
     frase: '"Seja você quem for, seja qual for sua posição social que você tenha na vida, a mais alta ou a mais baixa, tenha sempre como meta muita força, muita determinação e sempre faça tudo com amor e com muita fé em Deus, que um dia você chega lá. De alguma maneira você chega lá". - Aryton Senna',
     insta: 'https://www.instagram.com/tigasxlm/',
     linke: '',
@@ -73,6 +73,55 @@ const missao = [
     explicacao: 'Os participantes são desafiados a serem inovadores e criativos na criação de seus carros, utilizando tecnologia moderna e métodos de design para otimizar o desempenho.'
   },
 ]
+
+const patrocinadores = [
+  {
+    id: 1,
+    logo: 'public/Patrocinadores/Clip_path_group.png',
+    link: '',
+  },
+  {
+    id: 2,
+    logo: 'public/Patrocinadores/Clip_path_group-1.png',
+    link: '',
+  },
+  {
+    id: 3,
+    logo: 'public/Patrocinadores/Clip_path_group-2.png',
+    link: '',
+  },
+  {
+    id: 4,
+    logo: 'public/Patrocinadores/Clip_path_group-3.png',
+    link: '',
+  },
+  {
+    id: 5,
+    logo: 'public/Patrocinadores/Clip_path_group-4.png',
+    link: '',
+  },
+  {
+    id: 6,
+    logo: 'public/Patrocinadores/Clip_path_group-5.png',
+    link: '',
+  },
+  {
+    id: 7,
+    logo: 'public/Patrocinadores/Clip_path_group-6.png',
+    link: '',
+  },
+  {
+    id: 8,
+    logo: 'public/Patrocinadores/Clip_path_group-7.png',
+    link: '',
+  },
+  {
+    id: 9,
+    logo: 'public/Patrocinadores/Clip_path_group-8.png',
+    link: '',
+  },
+];
+
 </script>
 
 <template>
@@ -176,6 +225,12 @@ const missao = [
 
     <section class="patrocinios">
       <h2>Nossos patrocinadores</h2>
+
+      <div class="grid-patrocinadores">
+        <div v-for="patro in patrocinadores" :key="patro.id" class="patro">
+          <img :src="patro.logo" :alt="'Patrocinador ' + patro.id" />
+        </div>
+      </div>
     </section>
   </main>
 
@@ -403,6 +458,11 @@ header {
         }
       }
     }
+
+    & .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 25px rgba(255, 0, 0, 0.3);
+    }
   }
 }
 
@@ -530,5 +590,65 @@ footer .footer {
       cursor: pointer;
     }
   }
+}
+
+
+.patrocinios {
+  text-align: center;
+  color: white;
+  padding: 60px 1rem;
+}
+
+.patrocinios h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Container da grade */
+.grid-patrocinadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 1vw;
+  column-gap: 3vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Blocos individuais */
+.patro {
+  background-color: #6e0010;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 430px;
+  width: 100%;
+  height: 150px;
+}
+
+/* Imagem da logo */
+.patro img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efeito hover */
+.patro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.patro:hover img {
+  filter: brightness(1.1);
+  transform: scale(1.07);
 }
 </style>
