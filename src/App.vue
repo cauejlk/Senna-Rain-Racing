@@ -129,10 +129,10 @@ const patrocinadores = [
     <nav>
       <img src="/public/logo.png" alt="" width="110px" height="62px">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre-nos</a></li>
-        <li><a href="">Integrantes</a></li>
-        <li><a href="">Contatos</a></li>
+        <li><a href="#sobre">Sobre-nos</a></li>
+        <li><a href="#integrantes">Integrantes</a></li>
+        <li><a href="#patrocinios">Patrocinadores</a></li>
+        <li><a href="#contatos">Contatos</a></li>
       </ul>
     </nav>
   </header>
@@ -141,7 +141,7 @@ const patrocinadores = [
     <section class="banner">
       <h1>SENNA RAIN RACING</h1>
     </section>
-    <section class="quem-somos">
+    <section class="quem-somos" id="sobre">
       <div class="quem-somos__container">
         <div class="quem-somos__texto">
           <h2>QUEM SOMOS</h2>
@@ -192,7 +192,7 @@ const patrocinadores = [
       <img src="/public/torneios.png " alt="">
     </section>
 
-    <section class="integrantes">
+    <section class="integrantes" id="integrantes">
       <h2>INTEGRANTES</h2>
       <div class="cardsPessoas">
         <div v-for="pessoa in integrantes" :key="pessoa.id" class="card">
@@ -223,7 +223,7 @@ const patrocinadores = [
       </div>
     </section>
 
-    <section class="patrocinios">
+    <section class="patrocinios" id="patrocinios">
       <h2>Nossos patrocinadores</h2>
 
       <div class="grid-patrocinadores">
@@ -232,10 +232,11 @@ const patrocinadores = [
         </div>
       </div>
     </section>
+    <section id="contatos"></section>
   </main>
 
   <footer>
-    <section class="footer">
+    <section class="footer" id="contatos">
       <div class="div1">
         <div class="img">
           <img src="/public/logo.png" alt="">
