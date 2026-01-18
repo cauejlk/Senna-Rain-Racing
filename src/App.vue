@@ -6,7 +6,7 @@ const integrantes = [
     name: 'João Miguel de Medeiros',
     funcao: 'Gestor de Projetos',
     frase: '“Disciplina é a ponte que liga nossos sonhos às nossas realizações.” -  Pat Tillman',
-    insta: 'https://www.instagram.com/_jjoaomiguel_/',
+    insta: 'https://www.instagram.com/joaomeddeiross?igsh=MXNmamlucWF0NDcxMw%3D%3D&utm_source=qr',
     linke: 'https://www.linkedin.com/in/jo%C3%A3o-miguel-de-medeiros-4514472a0/',
   },
   {
@@ -29,12 +29,12 @@ const integrantes = [
   },
   {
     id: 4,
-    foto: '/integrantes/foto_ninive1.png',
-    name: '⁠Nínive Simon Cararo',
-    funcao: 'Líder e Engenheira Chefe',
-    frase: '“Sua tarefa é descobrir o seu trabalho e, então, com todo o coração, dedicar-se a ele.” - Autor Desconhecido ',
-    insta: 'https://www.instagram.com/ninivesimon?igsh=M2RkMWt5cmEwbTVv&utm_source=qr',
-    linke: 'https://www.linkedin.com/in/n%C3%ADnive-undefined-0a9aaa269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    foto: '/integrantes/foto_arthur.png',
+    name: 'Arthur Bertoli',
+    funcao: 'Gerente de Mídias',
+    frase: '“The nights are long but the years are short when you’re alive” - Red Hot Chili Peppers',
+    insta: 'https://www.instagram.com/bertoliarthur?igsh=djNnNWk5dHI1b2Vl&utm_source=qr',
+    linke: 'https://www.linkedin.com/in/arthur-bertoli-cardoso-227b9b231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
   },
   {
     id: 5,
@@ -118,6 +118,21 @@ const patrocinadores = [
   {
     id: 9,
     logo: 'patrocinadores/patrocinador8.png',
+    link: '',
+  },
+  {
+    id: 10,
+    logo: 'patrocinadores/patrocinador9.png',
+    link: '',
+  },
+  {
+    id: 11,
+    logo: 'patrocinadores/patrocinador10.png',
+    link: '',
+  },
+  {
+    id: 12,
+    logo: 'patrocinadores/patrocinador11.png',
     link: '',
   },
 ];
